@@ -17,7 +17,7 @@ yag = yagmail.SMTP(user=sender, password=password)
 contacts = pd.read_csv('contacts.csv')
 
 # Remove any leading/trailing spaces from the column headers
-contacts.columns = contacts.columns.str.strip()
+# contacts.columns = contacts.columns.str.strip()
 
 for index, row in contacts.iterrows():
     # print(row['email'])
@@ -26,4 +26,4 @@ Hi {row['name']}
 I am testing email automation using Python.
 """
     yag.send(to=row['email'], subject=subject, contents=contents)
-    print("Email Sent!")
+    print("Emails Sent!")
