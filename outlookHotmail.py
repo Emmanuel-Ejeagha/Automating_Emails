@@ -1,8 +1,4 @@
 import smtplib
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 sender = 'tekworld10@gmail.com'
 receiver = 'nuel6700@gmail.com'
